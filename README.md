@@ -10,7 +10,7 @@ Este algoritmo cumple con los casos en la plataforma de Udebug, pero, no pasa el
 * Finalmente, en el proceso de evaluación del problema, se llegó a la conclusión que es importante la implementación de grafos para la solución del mismo, donde cada vertice representa un parqueadero (excepción del inicial, que es un punto de entrada/salida), y las aristas entre los mismos determinan hacia donde se puede llegar. 
 * En el algoritmo Greedy para este mismo problema, presentado durante el curso, se llegó a la conclusión que el avión siempre debe intentar parquearse en una hoja del grafo, asi, se evita bloquear la menor cantidad de parqueaderos disponibles, mejorando lo planteado en un inicio, de siempre ubicarlo en la casilla de mayor ponderación, ya que a la hora de un avión despegar, es más probable que el mismo no lo puediese hacer, ya que existirían otros aviones los cuales bloqueaban su salida.
 * También se planteo un concepto muy importante, las "restricciones", el cual es un algoritmo que nos ayuda a determinar que aviones no se pueden establecer en el camino de otro evento, así, reduciendo la cantidad de casos que se evaluan.
-### Sobre el contenido en el repositorio
+# Sobre el contenido en el repositorio
 En el repositorio se encuentran varias carpetas, las cuales en cada una se almacena un codigo, junto a los avances que se realizaron durante la semana de trabajo. la carpeta llamada 'entrega final', contiene el codigo presentado, junto al informe final propuesto por el docente de la asignatura.
-### Autor
+# Autor
 Kristian Restrepo Osorio
