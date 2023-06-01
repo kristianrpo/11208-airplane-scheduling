@@ -1,5 +1,7 @@
-# 11208 - Airplane Scheduling - Backtracking
-Recordar que dentro de cada carpeta esta el codigo y un pdf que explica el avance que se realizó durante la semana
-despues del tiempo limite que se nos dió, pero la explicacion general a las preguntas de interactiva es el archivo
-que esta afuera de las carpetas llamado "EXPLICACION CODIGO", ya que esto fue lo que se entregó en la primera entrega del proyecto.
-Muchas gracias.
+# Airplane Scheduling
+La actividad evaluativa del semestre en la asignatura **ESTRUCTRA DE DATOS Y ALGORITMOS 2** ha girado en torno al problema 11208 del juez en línea de la Universidad de Valladolid, titulado Airplane Scheduling. Este es un problema de backtracking, donde el tiempo de ejecución juega un papel vital en la solución al mismo.
+# Contexto del problema
+Los aeropuertos tienen un gran terreno llano para que los aviones aterricen y despeguen. El problema radica en la siguiente pregunta, ¿es posible que cada avión aterrice, se estacione, y despegue correctamente sin chocarse con otros aviones y/o atravesarse por lugares indebidos?.
+Se  da  un  aeropuerto,  la  información  de  donde  aterrizan  los  aviones,  y  el  orden  con el cual ingresan y salen del aeropuerto.
+# Algoritmo que se desarrolló
+La función principal, llamada 'resolver_problema' se encarga de recorrer la lista de eventos ingresada por el usuario y verificar si se realiza un despegue o un aterrizaje, esto lo determina el signo del evento. Una vez identificada la acción a realizar, se debe encontrar un parqueadero accesible desde los puntos entrada/salida, y para esto, se planteó un algoritmo Greedy en la función 'ponderar', el cual le asigna un valor a todas las casillas desde los puntos iniciales, y almacena los parqueaderos accesibles. Ya teniendo los lugares donde se puede establecer el avion, se parquea el mismo y se continua evaluando los siguientes eventos, si finalmente no se llegó a una solución factible, se prueba establecer el evento actual en un nuevo parqueadero, para asi finalmente probar todas las posibilidades. Ahora bien, en el caso de que el evento sea un despegue, se verifica las casillas adyasentes al parqueadero en donde se estableció el avión, y si alguna de las mismas esta ponderada, significa que hay un camino hacia la salida desde ella, y por lo tanto, se define que desde el parqueadero actual, también se puede salir.
